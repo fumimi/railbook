@@ -29,4 +29,8 @@ class ViewController < ApplicationController
     @book = Book.new(publish: '技術評論社')
     @books = Book.select('DISTINCT publish')
   end
+
+  def dat_select
+    @book = Book.find(1)
+  end
 end
