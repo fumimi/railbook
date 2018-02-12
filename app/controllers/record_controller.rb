@@ -18,4 +18,8 @@ class RecordController < ApplicationController
     @books = Book.where('publish = ? AND price >= ?', params[:publish], params[:price])
     render 'hello/list'
   end
+
+  def belongs
+    @review = Review.find(3) 
+  end
 end
