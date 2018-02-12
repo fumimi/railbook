@@ -7,4 +7,8 @@ class ViewController < ApplicationController
     @book = Book.new
     # @book = Book.find(1)
   end
+
+  def field
+    @book = Book.new
+  end  
 end
